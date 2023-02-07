@@ -1,0 +1,33 @@
+#top_btn {
+    position: fixed;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    width: calc(3.6rem + 0.32vw);
+    height: calc(3.6rem + 0.32vw);
+    padding: 0.3rem 0.6rem;
+    text-align: center;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+#top_btn.lgt {
+    border: 0.1rem solid var(--white3);
+    color: var(--white3);
+}
+#top_btn.lgt:hover {
+    border: none;
+    color: var(--gray4);
+    background: var(--white3);
+}
+#top_btn.drk {
+    border: 0.1rem solid var(--gray4);
+    color: var(--gray4);
+}
+#top_btn.drk:hover {
+    border: none;
+    color: var(--white3);
+    background: var(--gray4);
+}
+#top_btn.hidden { display: none }
