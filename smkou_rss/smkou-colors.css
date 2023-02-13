@@ -1,0 +1,206 @@
+:root {
+    --w1: #FFF;
+    --w2: #F2F2F2;
+    --w3: #E0E0E0;
+    --g1: #D2DAE2;
+    --g2: #808E9B;
+    --g3: #485460;
+    --g4: #1E272E;
+    --b1: #1C1C1C;
+    --b2: #141414;
+    --b3: #000;
+}
+
+.bg-w { background-color: var(--w2) }
+.bg-b { background-color: var(--b2) }
+.bg-g { background-color: var(--g2) }
+
+/* LIGHT MODE: Colors on White */
+.lgt { color: var(--b1) }
+
+.lgt a { color: var(--b1) }
+.lgt a:hover { color: var(--g2) }
+
+.lgt .sm,
+.lgt .kou { color: var(--b1) }
+.lgt .logo:hover .sm,
+.lgt .logo:hover .kou { color: var(--g2) }
+
+.lgt .button,
+.lgt button,
+.lgt input[type="submit"],
+.lgt input[type="reset"],
+.lgt input[type="button"] {
+    color: var(--g4);
+    background-color: transparent;
+    border: 1px solid var(--g4);
+}
+.lgt .button:hover,
+.lgt button:hover,
+.lgt input[type="submit"]:hover,
+.lgt input[type="reset"]:hover,
+.lgt input[type="button"]:hover,
+.lgt .button:focus,
+.lgt button:focus,
+.lgt input[type="submit"]:focus,
+.lgt input[type="reset"]:focus,
+.lgt input[type="button"]:focus {
+    color: var(--b3);
+    border-color: var(--b3);
+}
+
+.lgt .button.button-primary,
+.lgt button.button-primary,
+.lgt input[type="submit"].button-primary,
+.lgt input[type="reset"].button-primary,
+.lgt input[type="button"].button-primary {
+    color: var(--w3);
+    background-color: var(--g2);
+    border: 1px solid var(--g2);
+}
+.lgt .button.button-primary:hover,
+.lgt button.button-primary:hover,
+.lgt input[type="submit"].button-primary:hover,
+.lgt input[type="reset"].button-primary:hover,
+.lgt input[type="button"].button-primary:hover,
+.lgt .button.button-primary:focus,
+.lgt button.button-primary:focus,
+.lgt input[type="submit"].button-primary:focus,
+.lgt input[type="reset"].button-primary:focus,
+.lgt input[type="button"].button-primary:focus {
+    color: var(--w3);
+    background-color: var(--g3);
+    border: 1px solid var(--g3);
+}
+
+.lgt input[type="email"],
+.lgt input[type="number"],
+.lgt input[type="search"],
+.lgt input[type="text"],
+.lgt input[type="tel"],
+.lgt input[type="url"],
+.lgt input[type="password"],
+.lgt textarea,
+.lgt select {
+    color: var(--b1);
+    background-color: var(--w1);
+    border: 1px solid var(--g2);
+}
+
+.lgt input[type="email"]:focus,
+.lgt input[type="number"]:focus,
+.lgt input[type="search"]:focus,
+.lgt input[type="text"]:focus,
+.lgt input[type="tel"]:focus,
+.lgt input[type="url"]:focus,
+.lgt input[type="password"]:focus,
+.lgt textarea:focus,
+.lgt select:focus {
+  border: 1px solid var(--g3);
+  outline: 0;
+}
+
+.lgt code {
+    background: var(--g1);
+    border: var(--g2);
+}
+
+.lgt th,
+.lgt td { border-bottom: var(--g2) }
+
+.lgt hr { border-top: 1px solid var(--g2) }
+
+/* DARK MODE: Colors on Black */
+.drk { color: var(--w3) }
+
+.drk a { color: var(--g3) }
+.drk a:hover { color: var(--w3) }
+
+.drk .sm,
+.drk .kou { color: var(--w3) }
+.drk .logo:hover .sm,
+.drk .logo:hover .kou { color: var(--g3) }
+
+.drk .button,
+.drk button,
+.drk input[type="submit"],
+.drk input[type="reset"],
+.drk input[type="button"] {
+    color: var(--w3);
+    background-color: transparent;
+    border: 1px solid var(--w3);
+}
+.drk .button:hover,
+.drk button:hover,
+.drk input[type="submit"]:hover,
+.drk input[type="reset"]:hover,
+.drk input[type="button"]:hover,
+.drk .button:focus,
+.drk button:focus,
+.drk input[type="submit"]:focus,
+.drk input[type="reset"]:focus,
+.drk input[type="button"]:focus {
+    color: var(--w1);
+    border-color: var(--w1);
+}
+
+.drk .button.button-primary,
+.drk button.button-primary,
+.drk input[type="submit"].button-primary,
+.drk input[type="reset"].button-primary,
+.drk input[type="button"].button-primary {
+    color: var(--b1);
+    background-color: var(--g3);
+    border: 1px solid var(--g3);
+}
+.drk .button.button-primary:hover,
+.drk button.button-primary:hover,
+.drk input[type="submit"].button-primary:hover,
+.drk input[type="reset"].button-primary:hover,
+.drk input[type="button"].button-primary:hover,
+.drk .button.button-primary:focus,
+.drk button.button-primary:focus,
+.drk input[type="submit"].button-primary:focus,
+.drk input[type="reset"].button-primary:focus,
+.drk input[type="button"].button-primary:focus {
+    color: var(--b1);
+    background-color: var(--g2);
+    border: 1px solid var(--g2);
+}
+
+.drk input[type="email"],
+.drk input[type="number"],
+.drk input[type="search"],
+.drk input[type="text"],
+.drk input[type="tel"],
+.drk input[type="url"],
+.drk input[type="password"],
+.drk textarea,
+.drk select {
+    color: var(--w3);
+    background-color: var(--b1);
+    border: 1px solid var(--g3);
+}
+
+.drk input[type="email"]:focus,
+.drk input[type="number"]:focus,
+.drk input[type="search"]:focus,
+.drk input[type="text"]:focus,
+.drk input[type="tel"]:focus,
+.drk input[type="url"]:focus,
+.drk input[type="password"]:focus,
+.drk textarea:focus,
+.drk select:focus {
+  border: 1px solid var(--g2);
+  outline: 0;
+}
+
+.drk code {
+    background: var(--g4);
+    border: var(--g3);
+}
+
+.drk th,
+.drk td { border-bottom: var(--g3) }
+
+.drk hr { border-top: 1px solid var(--g3) }

@@ -1,0 +1,17 @@
+.nav-0 {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.nav-0 a {
+    margin: 0 0.6rem;
+    font-size: calc(1.8rem + 0.32vw);
+}
+
+.nav-0 a.ztm-logo {
+    padding: 0 0.6rem;
+    font-family: 'Bebas Neue';
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+}

@@ -1,0 +1,112 @@
+body { position: relative }
+
+.nav-0 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0.6rem 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.nav-0 div { margin-right: 1.2rem }
+
+.nav-1 {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 10;
+}
+.nav-1 a {
+    margin: 0 1.2rem;
+}
+
+article {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#intro > div {
+    width: 95%;
+    max-width: 60rem;
+}
+#intro > div:last-of-type { text-align: center }
+
+#index .nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3rem;
+    font-family: 'Ra Mono';
+    line-height: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#index .nav a { margin: 0 1.2rem }
+#index .grid {
+    width: 95%;
+    max-width: 60rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+    gap: 1.2rem;
+}
+#index .grid div {
+    width: 12rem;
+    height: 12rem;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    font-family: 'Ra Mono';
+}
+
+#new-page h1 {
+    font-size: 7.2rem;
+    display: flex;
+    flex-direction: column;
+}
+#new-page h1 span { font-size: calc(2.4rem + 0.632031vw) }
+#new-page a {
+    position: absolute;
+    bottom: 5rem;
+    right: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 12px;
+    color: #F35588;
+    background: #FFBBB4;
+}
+#new-page a:hover {
+    color: #FFBBB4;
+    background: #F35588;
+}
+
+form {
+    width: 95%;
+    max-width: 60rem;
+    border-radius: 1.2rem;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+}
+input[type="date"] { height: 38px }
+form > div {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr 3fr;
+}
+.grid-out {
+    grid-column: span 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

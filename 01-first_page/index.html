@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>First Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="web_author" content="Sm Kou">
+    <link rel="stylesheet" href="../smkou_rss/smkou-styles.css">
+    <link rel="stylesheet" href="../smkou_rss/skeleton-styles.css">
+    <link rel="stylesheet" href="../smkou_rss/smkou-colors.css">
+    <link rel="stylesheet" href="../smkou_rss/project_nav.css">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="icon" href="../smkou_rss/projects-icon.png">
+</head>
+<body>
+    <nav class="nav-0 drk bg-g">
+        <a class="ztm-logo" href="https://zerotomastery.io/">ZTM</a>
+        <a class="logo" href="https://github.com/SmKou">
+            <span class="sm">Sm</span>
+            <span class="kou">寇</span>
+        </a>
+    </nav>
+    <nav class="nav-1 drk bg-g">
+        <a href="#intro">Intro</a>
+        <a href="#index">Index</a>
+        <a href="#new-page">New Page</a>
+        <a href="#registration">Registration</a>
+    </nav>
+    <main class="lgt">
+        <article id="intro">
+            <div>
+                <h1>First Page</h1>
+                <p>A demonstration of basic html properties, based on an exercise from the Web Developer 2023 course hosted by Zero to Mastery.</p>
+            </div>
+            <div>
+                <a class="button button-primary" href="#index">Index</a>
+                <a class="button button-primary" href="#new-page">New Page</a>
+                <a class="button button-primary" href="#registration">Registration</a>
+            </div>
+        </article>
+        <article id="index">
+            <div class="nav drk bg-b">
+                <a href="#new-page">New Page</a>
+                <a href="#registration">Registration</a>
+            </div>
+            <div class="grid">
+                <div style="background: #8db600">Apple Green</div>
+                <div style="background: #ff0800">Apple Red</div>
+                <div style="background: #ffe135">Banana Yellow</div>
+                <div style="background: #f35d8b">Dragonfruit Pink</div>
+                <div style="background: #d23b68">Watermelon Pink</div>
+                <div style="background: #3c7646">Watermelon Green</div>
+            </div>
+        </article>
+        <article id="new-page">
+            <h1><span>The</span>New Page</h1>
+            <a href="#index">Go Back</a>
+        </article>
+        <article id="registration" class="lgt">
+            <form method="GET">
+                <label for="first-name">First name:</label>
+                <input type="text" id="first-name" name="first_name">
+                <label for="last-name">Last name:</label>
+                <input type="text" id="last-name" name="last_name">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email_addr">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password_key" minlength="5">
+                <label for="birthday">Birthday:</label>
+                <input type="date" id="birthday" name="birthday_date">
+                <label>Gender:</label>
+                <div>
+                    <input type="radio" id="gender-male" name="gender_opt" value="male">
+                    <label for="gender-male">Male</label>
+                    <input type="radio" id="gender-female" name="gender_opt" value="female">
+                    <label for="gender-female">Female</label>
+                    <input type="radio" id="gender-other" name="gender_opt" value="other">
+                    <label for="gender-other">Other</label>
+                </div>
+                <label>Pets:</label>
+                <div>
+                    <input type="checkbox" id="pet-cat" name="pets_opt" value="cat">
+                    <label for="pet-cat">Cat</label>
+                    <input type="checkbox" id="pet-dog" name="pets_opt" value="dog">
+                    <label for="pet-dog">Dog</label>
+                    <input type="checkbox" id="pet-bird" name="pets_opt" value="bird">
+                    <label for="pet-bird">Bird</label>
+                    <input type="checkbox" id="pet-rodent" name="pets_opt" value="rodent">
+                    <label for="pet-rodent">Rodent</label>
+                </div>
+                <label for="cars">Cars:</label>
+                <select id="cars" name="cars_opt">
+                    <option value="audi">Audi</option>
+                    <option value="bmw">BMW</option>
+                    <option value="mercedes">Mercedes</option>
+                    <option value="volkswagen">Volkswagen</option>
+                    <option value="volvo">Volvo</option>
+                </select>
+                <div class="grid-out">
+                    <input type="submit" value="Register!">
+                    <input type="reset">
+                    <a class="button" href="#index">Return to Home</a>
+                </div>
+            </form>
+        </article>
+    </main>
+</body>
+</html>
