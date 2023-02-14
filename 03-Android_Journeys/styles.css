@@ -1,0 +1,126 @@
+nav {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    padding: 0.4rem 0.8rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    z-index: 10;
+}
+h2 { justify-self: start }
+.credit { justify-self: center }
+.nav-0 { justify-self: end }
+
+.nav-1 {
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+main {
+    position: relative;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.robot {
+    position: absolute;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+.head {
+    width: 4rem;
+    margin: 0 auto;
+    margin-bottom: 0.5rem;
+    height: 3rem;
+    border-radius: 4rem 4rem 0 0;
+}
+.eyes {
+    display: flex;
+    align-items: center;
+}
+.left_eye, .right_eye {
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 50%;
+}
+.left_eye {
+    position: relative;
+    top: 1.8rem;
+    left: 0.6rem;
+}
+.right_eye {
+    position: relative;
+    top: 1.8rem;
+    left: 1.8rem;
+}
+.upper_body {
+    width: 6rem;
+    height: 3rem;
+    display: flex;
+}
+.left_arm, .right_arm {
+    width: 0.8rem;
+    height: 2.5rem;
+    border-radius: 2rem;
+}
+.left_arm { margin-right: 0.25rem }
+.right_arm { margin-left: 0.25rem }
+.torso {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 0 0 1rem 1rem;
+}
+.lower_body {
+    width: 4rem;
+    height: 4rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+.left_leg, .right_leg {
+    width: 0.8rem;
+    height: 2.4rem;
+    border-radius: 0 0 2rem 2rem;
+}
+.left_leg { margin-left: 0.9rem }
+.right_leg { margin-left: 0.6rem }
+
+.head,
+.left_arm,
+.torso,
+.right_arm,
+.left_leg,
+.right_leg { background: var(--b1) }
+.left_eye, .right_eye { background-color: var(--w3) }
+.lgt .head,
+.lgt .left_arm,
+.lgt .torso,
+.lgt .right_arm,
+.lgt .left_leg,
+.lgt .right_leg { background: var(--g1) }
+.lgt .left_eye, .lgt .right_eye { background-color: var(--b1) }
+
+.robot:hover .right_arm {
+    -webkit-transform: rotate(-145deg) translateY(1rem);
+    -moz-transform: rotate(-145deg) translateY(1rem);
+    -o-transform: rotate(-145deg) translateY(1rem);
+    -ms-transform: rotate(-145deg) translateY(1rem);
+    transform: rotate(-145deg) translateY(1rem);
+}
+.robot:hover .left_leg {
+    -webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+    transform: rotate(20deg);
+}
+.robot:hover .left_eye,
+.robot:hover .right_eye { background-color: #82AAE3 }
+.robot.lgt:hover .left_eye,
+.robot.lgt:hover .right_eye { background-color: #205295 }
