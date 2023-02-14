@@ -117,9 +117,9 @@
 .drk a:hover { color: var(--w3) }
 
 .drk .sm,
-.drk .kou { color: var(--w3) }
+.drk .kou { color: var(--g3) }
 .drk .logo:hover .sm,
-.drk .logo:hover .kou { color: var(--g3) }
+.drk .logo:hover .kou { color: var(--w3) }
 
 .drk .button,
 .drk button,
