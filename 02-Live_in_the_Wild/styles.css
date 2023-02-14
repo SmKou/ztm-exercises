@@ -1,13 +1,13 @@
 .nav-0 { z-index: 10 }
 
-.nav-1 {
+nav {
     position: relative;
     padding: 0.8rem 1.6rem;
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
-.nav-1 h1 {
+nav h1 {
     position: absolute;
     top: 1rem;
     left: 1.2rem;
