@@ -3,14 +3,11 @@ nav {
     left: 0;
     width: 100%;
     padding: 0.4rem 0.8rem;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    justify-content: space-between;
     align-items: center;
     z-index: 10;
 }
-h2 { justify-self: start }
-.credit { justify-self: center }
-.nav-0 { justify-self: end }
 
 .nav-1 {
     bottom: 0;

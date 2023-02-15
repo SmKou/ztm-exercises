@@ -6,95 +6,63 @@ var img_arr = [
         photographer: 'Ales Krivec',
         photographer_url: 'https://unsplash.com/photos/4miBe6zg5r0',
         mode: true,
-        position: {
-            bottom: 15,
-            right: 41
-        },
-        scale: 'none'
+        scale: ''
     },
     {
         url: './01.jpg',
         photographer: 'Jasper Boer',
         photographer_url: 'https://unsplash.com/photos/LJD6U920zVo',
         mode: true,
-        position: { 
-            bottom: 4,
-            left: 42
-        },
-        scale: 'none'
+        scale: 0.5
     },
     {
         url: './02.jpg',
         photographer: "Michal Kmet'",
         photographer_url: 'https://unsplash.com/photos/M9O6GRrEEDY',
         mode: false,
-        position: {
-            bottom: 23,
-            left: 39
-        },
-        scale: 0.2
+        scale: 0.1
     },
     {
         url: './03.jpg',
         photographer: 'Sean Oulashin',
         photographer_url: 'https://unsplash.com/photos/KMn4VEeEPR8',
         mode: false,
-        position: {
-            bottom: 15,
-            left: 20
-        },
-        scale: 'none'
+        scale: 0.7
     },
     {
         url: './04.jpg',
         photographer: 'Federico Di Dio',
         photographer_url: 'https://unsplash.com/photos/Ovz3oM-95rE',
         mode: true,
-        position: { 
-            bottom: -5,
-            right: 33
-        },
-        scale: 'none'
+        scale: 0.2
     },
     {
         url: './05.jpg',
         photographer: 'Chris Meads',
         photographer_url: 'https://unsplash.com/photos/Uy9Bh-kmt3s',
-        mode: false,
-        position: {
-            bottom: 2.5,
-            right: 35
-        },
-        scale: 0.15
+        mode: true,
+        scale: 0.2
     },
     {
         url: './06.jpg',
         photographer: 'Federico Di Dio',
         photographer_url: 'https://unsplash.com/photos/-pnawSG96Ls',
         mode: true,
-        position: {
-            bottom: 17,
-            right: 35.5
-        },
-        scale: 0.2
+        scale: 0.5
     },
     {
         url: './07.jpg',
         photographer: 'Chris Stenger',
         photographer_url: 'https://unsplash.com/photos/DTMhL0OpXjQ',
         mode: true,
-        position: {
-            bottom: 5,
-            left: 46
-        },
-        scale: 'none'
+        scale: 0.4
     }
 ];
 var img_ind = 0;
 
 function setBgImg() {
     let img = img_arr[img_ind];
-    document.querySelector('main').style.backgroundImage = 'url(' + img.url + ')';
+    document.querySelector('main').style.background = `url(${img.url})`;
 
     let credit = document.querySelector('.credit');
     credit.innerHTML = '';
@@ -106,12 +74,17 @@ function setBgImg() {
     credit.appendChild(document.createTextNode(' on Unsplash'));
 
     let android = document.querySelector('.robot');
-    if (img.mode && !android.classList.contains('lgt')) {
-        android.classList.add('lgt');
-    }
-    else { android.classList.remove('lgt') }
+    (img.mode)?
+        (!android.classList.contains('lgt')?
+            android.classList.add('lgt'):
+            console.log('android has lgt', img.mode)
+        ):
+        android.classList.remove('lgt');
 
-    android.style.top = (img.position.top)?
+    android.style.bottom = '5%';
+    android.style.left = '12%';
+
+    /* android.style.top = (img.position.top)?
         `${img.position.top}%`:
         'auto';
     android.style.bottom = (img.position.bottom)?
@@ -122,11 +95,9 @@ function setBgImg() {
         'auto';
     android.style.right = (img.position.right)?
         `${img.position.right}%`:
-        'auto';
+        'auto'; */
 
-    android.style.transform = img.scale !== 'none'?
-        `scale(${img.scale})`:
-        'none';
+    android.style.transform = (img.scale)? `scale(${img.scale})`: 'none';
 }
 
 const decrement = () => {
