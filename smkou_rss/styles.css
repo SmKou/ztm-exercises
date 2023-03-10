@@ -1,0 +1,54 @@
+.nav-0 {
+    display: flex;
+    justify-content: space-between;
+}
+.nav-0 h1, 
+.nav-0 a {
+    margin: 0 1.2rem;
+}
+
+section {
+    width: 98%;
+    max-width: 80rem;
+    margin: 3rem auto;
+}
+.itm {
+    margin-bottom: 2.4rem;
+    border-bottom: 0.3rem dotted #000;
+}
+.itm p { margin-bottom: 1.2rem }
+.itm a {
+    position: relative;
+    margin-left: 3.5rem;
+    color: #000;
+    display: flex;
+    align-items: center;
+}
+.itm a::before {
+    position: absolute;
+    right: calc(100% + 0.5rem);
+    width: 0;
+    height: 0;
+    border-top: 1.5rem solid transparent;
+    border-bottom: 1.5rem solid transparent;
+    border-left-width: 3rem;
+    border-left-style: solid;
+    animation: colorflash 4s ease infinite;
+    content: '';
+}
+@keyframes colorflash {
+    0% { border-left-color: #ffcdd2 }
+    8.5% { border-left-color: #f8bbd0 }
+    17% { border-left-color: #e1bee7 }
+    25.5% { border-left-color: #c5cae9 }
+    34% { border-left-color: #bbdefb }
+    42.5% { border-left-color: #b2ebf2 }
+    51% { border-left-color: #b2dfdb }
+    59.5% { border-left-color: #c8e6c9 }
+    68% { border-left-color: #dce775 }
+    76.5% { border-left-color: #fff176 }
+    85% { border-left-color: #ffd54f }
+    93.5% { border-left-color: #ffb74d }
+    100% { border-left-color: #ffcdd2 }
+}
+.itm a:hover { color: red }
